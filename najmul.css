@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* heading section */
+
+#header {
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: #101010;
+}
+
+#inline_header {
+  width: 1000px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo a {
+  height: 100%;
+  display: table;
+}
+
+.logo a h1 {
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-family: "montserrat";
+  font-size: 32px;
+  font-weight: 200;
+}
+
+.logo a h1 span {
+  font-weight: 600;
+}
+
+.nav {
+  float: right;
+  height: 100%;
+}
+
+.nav a {
+  float: left;
+  height: 100%;
+  display: table;
+  padding: 0 20px;
+}
+
+.nav a li {
+  color: white;
+  font-family: "montserrat";
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+/* slider section */
+
+#section {
+  border-top: 3px solid white;
+  border-left: 3px solid #101010;
+  border-right: 3px solid #101010;
+}
+
+/* article section */
+
+#content_wrapper {
+  width: 100%;
+  height: 100%;
+  border: 3px solid#2C3E4F;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.article {
+  width: 68%;
+  height: 100%;
+  float: left;
+  margin-left: 10px;
+}
+
+.article h2 {
+  margin-top: 5px;
+  margin-bottom: 7px;
+  border-bottom: 1px solid black;
+}
+
+.article p {
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+/* asidebar section */
+
+.asidebar {
+  width: 28%;
+  float: right;
+}
+
+.asidebar h2 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.asidebar ul {
+  list-style-type: none;
+}
+
+.asidebar ul li {
+  padding: 3px;
+  margin: 0 auto;
+}
+
+.asidebar ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+/* footer section */
+
+#footer {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  background: #2c3e4f;
+  text-align: center;
+}
+
+#footer i {
+  color: #fff;
+  font-size: 30px;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+#footer p {
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* book section */
+
+#book_wrapper {
+  width: 100%;
+  border: 5px solid #7d5fff;
+}
+
+.book {
+  border-bottom: 5px solid #7d5fff;
+  padding: 20px;
+}
+
+.book:last-child {
+  border-bottom: none;
+}
+
+.book img {
+  display: block;
+  margin-right: 20px;
+  width: 200px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.book h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  text-align: center;
+}
+
+.book p {
+  text-align: justify;
+}
+
+/* movies section */
+
+#movies_wrapper {
+  width: 100%;
+  border: 5px solid #000002;
+}
+
+.movies {
+  padding: 20px;
+  border-bottom: 5px solid #000002;
+}
+
+.movies:last-child {
+  border-bottom: none;
+}
+
+.movies img {
+  display: block;
+  width: 200px;
+  height: 300px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.movies h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid black;
+  display: inline-block;
+  text-align: center;
+}
+
+.movies p {
+  text-align: justify;
+}
+
+/* travel section */
+#travel_wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto auto auto auto auto;
+}
+.travel {
+  border: 3px solid green;
+  display: grid;
+  grid-template-columns: 23% auto;
+  grid-gap: 50px;
+  padding: 30px;
+}
+
+@media screen and (max-width: 1000px){
+  .travel {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.travel-img img {
+  width: 400px;
+  height: 600px;
+}
+.travel-content {
+  text-align: center;
+}
+.travel-content h2 {
+  display: inline;
+  border-bottom: 2px solid black;
+}
+.travel-content p {
+  text-align: justify;
+  margin-top: 20px;
+}
+figure {
+  padding: 5px;
+  text-align: center;
+  background-color: #9c99a9;
+}
+figcaption {
+  margin-top: 10px;
+  font-size: 20px;
+  color: white;
+}
+/* about section  */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.profile-img img {
+  width: 100%;
+}
+
+.profile-content {
+  padding: 30px;
+}
+
+.profile-content h2 {
+  color: lightseagreen;
+  margin-bottom: 20px;
+}
+
+.profile-content p {
+  text-align: justify;
+}
